@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>API Request Tester</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-code-pro" type="text/css"/>
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <section class="bcls-section" id="ajax">
+  <h2>API tester</h2>
+
+  <p>This test sends an API GET request to the proxy via AJAX</p>
+
+  <div class="form-wrapper">
+    <fieldset>
+      <legend>Tester for Brightcove APIs</legend>
+
+      <p>Client id: <input id="client_id" type="text" placeholder="your client id" name="client_id" /></p>
+
+      <p>Client secret: <input id="client_secret" type="text" placeholder="your client secret" name="client_secret" /></p>
+
+      <p>Call type: <select name="requestType" id="requestType"><option selected="selected">GET</option><option>POST</option><option>PUT</option><option>PATCH</option><option>DELETE</option></select></p>
+
+      <p>Full request URL for the API call:<br />
+        <textarea name="url" id="url" class="bcls-code"></textarea></p>
+
+      <p>Call body (optional - include if you need to submit data with the request):<br />
+        <textarea name="requestBody" id="requestBody" class="bcls-code"></textarea></p>
+
+      <p><input id="submit" class="bcls-button" type="submit" value="Submit" /></p>
+
+      <p>Response:</p>
+
+      <pre>
+<code id="response">results will go here</code></pre>
+    </fieldset>
+  </div>
+</section>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
